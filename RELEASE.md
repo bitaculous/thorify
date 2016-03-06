@@ -7,10 +7,9 @@ Release
 STEPS:
 ------
 
-1. Update CHANGELOG
-2. Bump version in `lib/bitaculous/thorify/version.rb`
-3. Push changes
-4. Create a tag
+1. Bump version in `lib/bitaculous/thorify/version.rb`
+2. Push changes
+3. Create a tag
 
 Glossary
 --------
