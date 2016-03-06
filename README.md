@@ -8,6 +8,17 @@
 
 **A set of [Thor] tasks, we use at [Bitaculous].**
 
+Installation
+------------
+
+1. Add Thorify to your Gemfile:
+
+    ```ruby
+    gem 'bitaculous-thorify', github: 'bitaculous/thorify'
+    ```
+
+2. Run `bundle` to install all dependencies with [Bundler]
+
 Development
 -----------
 
@@ -43,6 +54,7 @@ License
 Thorify is released under the [MIT License (MIT)], see [LICENSE].
 
 [Bitaculous]: https://bitaculous.com "It's all about the bits, baby!"
+[Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Code Climate]: https://codeclimate.com/github/bitaculous/thorify "Thorify at Code Climate"
 [Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/thorify.svg?style=flat "Code Climate Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/thorify "Thorify at Gemnasium"
