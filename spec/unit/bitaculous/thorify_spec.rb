@@ -1,0 +1,3 @@
+RSpec.describe Bitaculous::Thorify do
+  # Your specs goes here...
+end
