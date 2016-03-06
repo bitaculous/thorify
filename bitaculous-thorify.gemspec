@@ -14,6 +14,9 @@ Gem::Specification.new 'bitaculous-thorify', Bitaculous::Thorify::VERSION do |sp
   spec.required_ruby_version     = '~> 2.2'
   spec.required_rubygems_version = '~> 2.4'
 
+  spec.add_runtime_dependency 'thor',   '~> 0.19', '>= 0.19.1'
+  spec.add_runtime_dependency 'pastel', '~> 0.6',  '>= 0.6.0'
+
   spec.add_development_dependency 'rake',  '~> 10.5', '>= 10.5.0'
   spec.add_development_dependency 'rspec', '~> 3.4',  '>= 3.4.0'
 end
