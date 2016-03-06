@@ -1,3 +1,6 @@
+addons:
+  code_climate:
+    repo_token: fc7f7e0563450afcb989fa87027bd2a68155359b6da11183c7f8690b185a766a
 branches:
   except:
     - gh-pages
