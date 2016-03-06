@@ -2,6 +2,6 @@
 
 module Bitaculous
   module Thorify # :nodoc:
-    VERSION = '0.0.1'.freeze
+    VERSION = '1.0.0'.freeze
   end
 end
