@@ -21,6 +21,7 @@ RSpec.describe Bitaculous::Thorify::Task do
       expect(subject.colorize(message)).to eql expected
     end
 
+    # rubocop:disable RSpec/ExampleLength
     it 'allows the color as an argument' do
       message  = 'Bitaculous Thorify'
       color    = :blue
