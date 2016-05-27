@@ -9,7 +9,7 @@ gemspec
 # === Development ===
 
 group :development do
-  gem 'guard-rspec', '~> 4.6.5', require: false
+  gem 'guard-rspec', '~> 4.7.0', require: false
 end
 
 # === Test ===
