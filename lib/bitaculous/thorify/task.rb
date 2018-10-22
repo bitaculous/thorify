@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'pastel'
 require 'thor'
 
@@ -38,6 +40,7 @@ module Bitaculous
 
           colorize.call message
         end
+        # rubocop:enable MethodLength
       end
     end
   end

@@ -1,4 +1,6 @@
-root = File.expand_path '../../', __FILE__
+# frozen_string_literal: true
+
+root = File.expand_path '..', __dir__
 
 # Require the test object.
 require 'bitaculous/thorify'

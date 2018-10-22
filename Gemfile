@@ -1,4 +1,5 @@
-#!/usr/bin/env bundle
+#!/usr/bin/env gem build
+# frozen_string_literal: true
 
 source 'https://rubygems.org'
 
@@ -9,7 +10,7 @@ gemspec
 # === Development ===
 
 group :development do
-  gem 'guard-rspec', '~> 4.7.0', require: false
+  gem 'guard-rspec', '~> 4.7.3', require: false
 end
 
 # === Test ===
@@ -17,14 +18,12 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.40.0', require: false
-  gem 'rubocop-rspec', '~> 1.5.0',  require: false
+  gem 'rubocop',       '~> 0.59.2', require: false
+  gem 'rubocop-rspec', '~> 1.30.0', require: false
 
   # --- Code Coverage ---
 
-  gem 'simplecov', '~> 0.11.2', require: false
-
-  gem 'codeclimate-test-reporter', '~> 0.5.0', require: false
+  gem 'simplecov', '~> 0.16.1', require: false
 end
 
 # === Misc ===
@@ -32,11 +31,5 @@ end
 group :misc do
   # --- Formatter ---
 
-  gem 'nyan-cat-formatter', '~> 0.11', require: false
-
-  # --- OS X ---
-
-  gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
-
-  gem 'rb-fsevent', '~> 0.9.7', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
+  gem 'nyan-cat-formatter', '~> 0.12', require: false
 end

@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 RSpec.describe Bitaculous::Thorify::Task do
-  subject { described_class.new }
+  subject(:thorify) { described_class.new }
 
   let(:pastel) { Pastel.new }
 
@@ -9,7 +11,7 @@ RSpec.describe Bitaculous::Thorify::Task do
       color    = :white
       expected = pastel.white message
 
-      expect(subject.log(message, color, false, false)).to eql expected
+      expect(thorify.log(message, color, false, false)).to eql expected
     end
   end
 
@@ -18,7 +20,7 @@ RSpec.describe Bitaculous::Thorify::Task do
       message  = 'Bitaculous Thorify'
       expected = pastel.white message
 
-      expect(subject.colorize(message)).to eql expected
+      expect(thorify.colorize(message)).to eql expected
     end
 
     # rubocop:disable RSpec/ExampleLength
@@ -27,19 +29,20 @@ RSpec.describe Bitaculous::Thorify::Task do
       color    = :blue
       expected = pastel.bright_blue message
 
-      expect(subject.colorize(message, color)).to eql expected
+      expect(thorify.colorize(message, color)).to eql expected
 
       message  = 'Bitaculous Thorify'
       color    = :yellow
       expected = pastel.bright_yellow message
 
-      expect(subject.colorize(message, color)).to eql expected
+      expect(thorify.colorize(message, color)).to eql expected
 
       message  = 'Bitaculous Thorify'
       color    = :green
       expected = pastel.bright_green message
 
-      expect(subject.colorize(message, color)).to eql expected
+      expect(thorify.colorize(message, color)).to eql expected
     end
+    # rubocop:enable RSpec/ExampleLength
   end
 end

@@ -1,4 +1,5 @@
 #!/usr/bin/env gem build
+# frozen_string_literal: true
 
 require_relative 'lib/bitaculous/thorify/version'
 
@@ -11,12 +12,12 @@ Gem::Specification.new 'bitaculous-thorify', Bitaculous::Thorify::VERSION do |sp
   spec.files            = Dir['{lib,spec}/**/*', 'CONTRIBUTING.md', 'LICENSE', 'README.md']
   spec.extra_rdoc_files = ['CONTRIBUTING.md', 'LICENSE', 'README.md']
 
-  spec.required_ruby_version     = '~> 2.2'
+  spec.required_ruby_version     = '~> 2.3'
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'thor',   '~> 0.19', '>= 0.19.1'
-  spec.add_runtime_dependency 'pastel', '~> 0.6',  '>= 0.6.1'
+  spec.add_runtime_dependency 'thor',   '~> 0.20', '>= 0.20.0'
+  spec.add_runtime_dependency 'pastel', '~> 0.7',  '>= 0.7.2'
 
-  spec.add_development_dependency 'rake',  '~> 11.1', '>= 11.1.2'
-  spec.add_development_dependency 'rspec', '~> 3.4',  '>= 3.4.0'
+  spec.add_development_dependency 'rake',  '~> 12.0', '>= 12.3.1'
+  spec.add_development_dependency 'rspec', '~> 3.8',  '>= 3.8.0'
 end
