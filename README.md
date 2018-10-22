@@ -54,7 +54,7 @@ Thorify is released under the [MIT License (MIT)], see [LICENSE].
 [Bitaculous]: https://bitaculous.com "It's all about the bits, baby!"
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Code Climate]: https://codeclimate.com/github/bitaculous/thorify/maintainability "Thorify at Code Climate"
-[Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/thorify.svg?style=flat "Code Climate Status"
+[Code Climate Status]: https://api.codeclimate.com/v1/badges/a43beb656727c21a2418/maintainability "Code Climate Status"
 [Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/thorify/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/thorify/master/LICENSE "License"
