@@ -12,7 +12,7 @@ Gem::Specification.new 'bitaculous-thorify', Bitaculous::Thorify::VERSION do |sp
   spec.files            = Dir['{lib,spec}/**/*', 'CONTRIBUTING.md', 'LICENSE', 'README.md']
   spec.extra_rdoc_files = ['CONTRIBUTING.md', 'LICENSE', 'README.md']
 
-  spec.required_ruby_version     = '~> 2.3'
+  spec.required_ruby_version     = '~> 2.4'
   spec.required_rubygems_version = '~> 2.4'
 
   spec.add_runtime_dependency 'thor',   '~> 0.20', '>= 0.20.0'
