@@ -28,12 +28,14 @@ module Bitaculous
           colorize = Pastel.new
 
           case color
+          when :error, :red
+            colorize = colorize.bright_red.detach
           when :info, :blue
             colorize = colorize.bright_blue.detach
-          when :warning, :yellow
-            colorize = colorize.bright_yellow.detach
           when :ok, :green
             colorize = colorize.bright_green.detach
+          when :warning, :yellow
+            colorize = colorize.bright_yellow.detach
           else
             colorize = colorize.white.detach
           end
